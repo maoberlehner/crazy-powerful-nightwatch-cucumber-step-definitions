@@ -1,0 +1,34 @@
+{
+  "name": "crazy-powerful-nightwatch-cucumber-step-definitions",
+  "version": "0.0.1",
+  "author": "Markus Oberlehner",
+  "homepage": "https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "test:serve": "node test/server/index.js",
+    "test": "concurrently 'npm run test:serve' 'nightwatch -c test/conf.nightwatch.js' --success first --kill-others"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions"
+  },
+  "bugs": {
+    "url": "https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions/issues"
+  },
+  "devDependencies": {
+    "@avalanche/eslint-config": "^2.0.0",
+    "chromedriver": "^2.36.0",
+    "compression": "^1.7.2",
+    "concurrently": "^3.5.1",
+    "css-to-xpath": "^0.1.0",
+    "cucumber": "^4.0.0",
+    "cucumber-pretty": "^1.4.0",
+    "eslint": "^4.19.0",
+    "eslint-plugin-import": "^2.9.0",
+    "express": "^4.16.3",
+    "nightwatch": "^0.9.20",
+    "nightwatch-cucumber": "^9.1.2"
+  }
+}
